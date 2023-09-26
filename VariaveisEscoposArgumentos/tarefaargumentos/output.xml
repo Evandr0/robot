@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230823 10:32:49.887" rpa="false" schemaversion="4">
+<suite id="s1" name="TarefaArgumentos" source="C:\Users\ev047953\Documents\Evandro\git\Robotudemy\VariaveisEscoposArgumentos\TarefaArgumentos.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="10">
+<kw name="Essa keyword gera palavra aleatoria">
+<kw name="Generate Random String" library="String">
+<var>${PALAVRA_ALEATORIA}</var>
+<arg>${8}</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230823 10:32:49.912" level="INFO">${PALAVRA_ALEATORIA} = WgGa1Tq9</msg>
+<status status="PASS" starttime="20230823 10:32:49.912" endtime="20230823 10:32:49.912"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${EMAIL_CRIADO}</var>
+<arg>${PESSOA.nome}${PESSOA.sobrenome}${PALAVRA_ALEATORIA}${DOMINIO}</arg>
+<arg>Frame</arg>
+<arg>Class</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230823 10:32:49.913" level="INFO">${EMAIL_CRIADO} = EvandroDiasWgGa1Tq9@testerobot.com.br</msg>
+<status status="PASS" starttime="20230823 10:32:49.913" endtime="20230823 10:32:49.913"/>
+</kw>
+<kw name="Subkeyword de log">
+<arg>${EMAIL_CRIADO}</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Email criado será ${EMAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230823 10:32:49.914" endtime="20230823 10:32:49.914"/>
+</kw>
+<status status="PASS" starttime="20230823 10:32:49.913" endtime="20230823 10:32:49.914"/>
+</kw>
+<status status="PASS" starttime="20230823 10:32:49.912" endtime="20230823 10:32:49.914"/>
+</kw>
+<status status="PASS" starttime="20230823 10:32:49.911" endtime="20230823 10:32:49.914"/>
+</test>
+<doc>TarefaArgumentos</doc>
+<status status="PASS" starttime="20230823 10:32:49.888" endtime="20230823 10:32:49.915"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TarefaArgumentos">TarefaArgumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

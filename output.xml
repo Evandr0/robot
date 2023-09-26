@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.6 on win32)" generated="20230816 17:33:04.893" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Testes" source="C:\Users\ev047953\Documents\Evandro\git\Robotudemy\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="10">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser">
+<arg>browser=chrome</arg>
+<arg>https://www.amazon.com.br</arg>
+<msg timestamp="20230816 17:33:04.925" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230816 17:33:04.924" endtime="20230816 17:33:04.925"/>
+</kw>
+<status status="FAIL" starttime="20230816 17:33:04.923" endtime="20230816 17:33:04.925"/>
+</kw>
+<kw name="Fechar o navegador" type="TEARDOWN">
+<msg timestamp="20230816 17:33:04.926" level="FAIL">No keyword with name 'Fechar o navegador' found.</msg>
+<status status="FAIL" starttime="20230816 17:33:04.926" endtime="20230816 17:33:04.926">No keyword with name 'Fechar o navegador' found.</status>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da Amazon.com.br
+e verifica a categoria computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230816 17:33:04.923" endtime="20230816 17:33:04.926">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Fechar o navegador' found.</status>
+</test>
+<doc>Essa suite teste o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20230816 17:33:04.895" endtime="20230816 17:33:04.927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230816 17:33:04.921" level="ERROR">Error in file 'C:\Users\ev047953\Documents\Evandro\git\Robotudemy\WebTesting\amazon_resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'selenium.webdriver'; 'selenium' is not a package
+Traceback (most recent call last):
+  File "C:\Users\ev047953\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\__init__.py", line 28, in &lt;module&gt;
+    from selenium.webdriver.remote.webdriver import WebDriver
+  File "C:\Users\ev047953\AppData\Local\Programs\Python\Python310\selenium.py", line 1, in &lt;module&gt;
+    from selenium.webdriver.chrome.service import Service
+PYTHONPATH:
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310
+  C:\Users\ev047953\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>
